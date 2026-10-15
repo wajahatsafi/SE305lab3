@@ -1,0 +1,47 @@
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Main function: program execution starts here.
+/*
+A variable stores data in memory.
+cin takes input from the user.
+cout displays output on the screen.
+*/
+
+int main() {
+    // Declare variables
+    string name;
+    string department;
+    int age;
+    float gpa;
+    int birthYear;
+
+    // Take input from the user
+    cout << "Enter name: ";
+    cin >> name;
+
+    cout << "Enter age: ";
+    cin >> age;
+
+    cout << "Enter GPA: ";
+    cin >> gpa;
+
+    cout << "Enter department: ";
+    cin >> department;
+
+    // Calculate birth year
+    birthYear = 2026 - age;
+
+    // Display formatted student information
+    cout << "\nStudent Information" << endl;
+    cout << "-------------------" << endl;
+    cout << "Name: " << name << endl;
+    cout << "Age: " << age << endl;
+    cout << "GPA: " << gpa << endl;
+    cout << "Department: " << department << endl;
+    cout << "Birth Year: " << birthYear << endl;
+
+    return 0;
+}
